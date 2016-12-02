@@ -1,0 +1,27 @@
+{
+  "name": "roomchecker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.1",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Del-sama/Roomchecker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Del-sama/Roomchecker/issues"
+  },
+  "homepage": "https://github.com/Del-sama/Roomchecker#readme"
+}
