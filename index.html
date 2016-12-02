@@ -1,43 +1,39 @@
-<!Doctype html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Room Checker - Book rooms for different activities</title>
-	<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
-		<div id ="wrapper">
-			<header>
-				<div>
-					<div id="wordmark">
-						<h1>ROOM CHECKER</h1>
-					</div>
-					<div id ="search">
-						<input type="text" name="search" placeholder="search">
-						<i class="fa fa-search" aria-hidden="true"></i>
-					</div>
-				</div>
-				<div class= "clear">
-				</div>
-			</header>
-			<section>
-				<div class="main">
-					<img src="./images/pexels-photo.jpg" alt="picture of meeting room" class="main">
-					
-				</div>
-				<div>
-					<h2>Book a room</h2>
-				</div>
-				<div id="activities">
-					<ul>
-						<li><a href="#">Meeting</a></li>
-						<li><a href="#">Games</a></li>
-						<li><a href="#">Quiet-time</a></li>
-						<li><a href="#">Learning</a></li>
-						<li><a href="#">Working</a></li>
-					</ul>
-				</div>
-			</section>
-			<footer>
-			</footer>
-		</div>
-	</body>
-	</html>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-text">
+                <h1>Room Booking Application</h1>
+            </div>
+            <div class="col s12">
+                <div class="input-field col s12">
+                    <label for="first_name">Enter the name of the room</label>
+                    <input id="room-name" type="text" class="validate dropdown" style="margin-bottom: 0px" />
+                    <ul id="rooms-dropdown" class="collection">
+                    </ul>
+                    <button id="toggle-room-div" onClick="showRoomsDiv()" class="waves-effect waves-light btn">Show all Rooms</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="all-rooms" class="row">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
